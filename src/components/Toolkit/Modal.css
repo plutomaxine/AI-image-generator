@@ -1,0 +1,68 @@
+/* main container for the modal */
+.modal {
+  background: #2a2a2a;
+  border-radius: 8px;
+  width: 55%;
+  height: 80%;
+  max-width:1000px;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #53da3b;
+  overflow: hidden;
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding:0 20px;
+}
+
+/* Header - Modal title */
+.modal-title {  
+  color: #c4c7c4;
+  font-size: 30px;
+  font-weight:600;
+}
+
+/* Header - Close button */
+.close-modal-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  cursor: pointer;
+  top: 3px !important;
+  right: 0px !important;
+  /* position: absolute; */
+  margin-right:20px;
+}
+
+
+.generated-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.generated-image {
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: 20px;
+  width:30rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}

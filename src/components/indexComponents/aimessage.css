@@ -1,0 +1,231 @@
+
+.chat_log{
+    text-align: left;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    justify-content:flex-start;
+    width:100%;
+    /* background-color:azure; */
+    margin-bottom: 30px;
+    align-items:center;
+  }
+  
+.chat_message{
+    width:80%;
+    max-width:900px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    background-color:#1A1A1A;
+    border-radius:10px;
+    height:fit-content;
+    gap:15px;
+    color:#ffffff;
+    border-style: solid;
+    border-color: #202020;
+  
+  }
+
+  .user_name{
+    margin-left:10px;
+    font-family: Inter;
+    font-weight:600;
+    font-size:20px;
+  }
+  .message{
+    display:flex;
+    white-space:pre-wrap;
+    max-width:900px;
+    overflow-wrap: break-word;
+    word-wrap:break-word;
+    overflow:auto;
+    /* border:1px solid red; */
+    flex-wrap:wrap;
+    margin-left:50px;
+  
+  }
+  p{  
+    width:100%;
+    margin:0;
+    font-size:larger;
+  }
+  
+.ai_chat_message{
+  width:80%;
+  max-width:900px;
+  padding:30px;
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+  background-color:#282828;
+  border-radius:10px;
+  height:fit-content;
+  gap:15px;
+  color:#ffffff;
+}
+
+  .ai_message{
+    width:100%;
+    max-width:700px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    background-color:#282828;
+    border-radius:10px;
+    height:fit-content;
+    gap:15px;
+    color:#ffffff;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .ai_info{
+    display:flex;
+    max-width:700px;
+    flex-direction:row;
+    align-items:center;
+    overflow-wrap: break-word;
+    /* background-color:aquamarine; */
+    align-self:flex-start;
+  
+  }
+  .ai_name{
+    margin-left:10px;
+    font-family: Inter;
+    font-weight:600;
+    font-size:20px;
+  }
+  .avatar{
+    display:flex;
+    background-color:#365037;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items:center;
+  }
+.avatar_img{  
+  width: 80%;
+  height:auto;
+}
+
+.img_box{
+  width:15em;
+  height:15em;
+  background-color:darkorchid;
+  position: relative;
+}
+
+/* 'upload-btn' button */
+.upload-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 180px;
+  height: 35px; 
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.img_box:hover .upload-btn{
+  display: block;
+  background-color: #53Da3b;
+  color: white;
+}
+.img_box:hover .upload-btn{
+  display: block;
+  background-color: #53Da3b;
+  color: white;
+}
+
+.img_box .upload-btn:hover{
+  background-color: #50A740;
+}
+
+/* 'copycode-btn' button 
+.copycode-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 120px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+*/
+
+/* 
+.img_box:hover .copycode-btn{
+  display: block;
+  background-color: #53Da3b;
+  color: white;
+}
+*/
+
+.download-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background to make the icon more visible */
+  border-radius: 50%;
+  padding: 5px; /* Adjust the padding to fit the icon size */
+}
+
+.download-icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.loadingbox{
+  display: inline-block;
+  width:100%;
+}
+
+.loading-message {
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%;
+  background-color: #53da3b; 
+  animation: pulse 1.8s infinite ease-in-out;
+  margin-left:20px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #53da3b;
+    transform: scale(1); 
+  }
+  50% {
+    background-color: #d1ffc9;
+    transform: scale(1.08);
+  }
+  100% {
+    background-color: #53da3b;
+    transform: scale(1); 
+    ;
+  }
+}
+
+.error-message{
+  color:#8a8a8a;
+}

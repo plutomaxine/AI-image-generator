@@ -1,0 +1,60 @@
+/* HistoryEntry.css */
+.history-ctn{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  background-color:#363636;
+  margin-top:15px;
+  padding:5px;
+  border-radius:10px;
+}
+
+.history-ctn:hover{
+
+  background-color: #4b4e4a;;
+
+}
+
+.history_entry {
+  padding: 12px 12px;  /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  color: rgb(212, 211, 211); /* Light grey text color */
+  font-size: 16px; /* Text size */
+  text-align: left; /* Align text to the left */
+  overflow-wrap: break-word; /* Ensures text wraps within the container */
+  width:90%
+
+}
+
+/*
+.history_entry:nth-child(even) {
+  background-color: #e9e9e9;  
+  margin-top: 10px;
+}*/
+
+/*
+.history_entry:hover {
+  background-color: #dfe3e6;
+  margin-top: 10px; 
+} */
+
+.history_entry div {
+  font-size: 16px;
+}
+
+.delete_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right:10px;
+}
+
+.delete_button:hover .trash_icon {
+  opacity: 0.5;
+}
+
+.trash_icon {
+  width: 16px;
+  height: 16px;
+}

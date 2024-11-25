@@ -1,0 +1,126 @@
+  /* Main container */
+  .upload-container {
+    /* Dashed border */
+    height: 90%;
+    width:90%;
+    text-align: center;
+    color: #fff;
+    overflow-y: hidden;
+    /* Allows the container to scroll if the content overflows */
+    /* Responsive max height */
+    /* max-height: 40vh;
+    Minimum height */
+    min-height: 2px;
+  }
+
+  /* Cotainer for the drop area */
+  .drop-area {
+    padding: 25px;
+    text-align: center;
+    background-color: #242424;
+    /* Give it a distinct look */
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: background-color 0s ease;
+    border:2px dashed #D9EBDC;
+    border-radius:20px;
+    height:fix-content
+  }
+
+  .drop-area:hover{
+
+    background-color: #282828;
+
+  }
+
+  /* Drag and drop text */
+  .drag-drop-message p {
+    color: #777777;
+    /* Adjust the color as needed */
+    margin-top: 0px;
+    margin-bottom: 15px;
+    /* Spacing between the message and the button */
+    text-align: center;
+    /* Center the message */
+    font-size: 20px;
+  }
+
+  .loading-spinner p{
+    font-size: 16px;
+  }
+
+  /* 'upload' text link */
+  .upload-link {
+    color: #ffffff;
+    /* Link color, you can use your theme's primary color */
+    cursor: pointer;
+    /* Changes the cursor to the pointer hand icon */
+    background-color:#53DA3B;
+    /* Underlines the text to look like a link */
+    padding: 10px 20px;
+    /* Optional: Adds some space before the upload link */
+    font-size:15px;
+    border-radius:10px;
+    transition: background-color 0.2s ease;
+  }
+
+  .upload-link:hover {
+    background-color:#49953B;
+
+  }
+
+  /* Individual image preview */
+  .image-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  /* Container for the all image previews */
+  .images-preview {
+    display: flex;
+    /* Makes the images display horizontally */
+    flex-wrap: wrap;
+    /* Allows the images to wrap to the next line if there's not enough space */
+    gap: 10px;
+    /* Spacing between the images */
+    justify-content: flex-start;
+    /* Aligns the images to the left */
+    align-items: center;
+    /* Aligns the images vertically */
+    margin-bottom: 5px;
+    justify-items: center;
+    margin-left: 45px;
+  }
+
+  /* Container for each image */
+  .image-container {
+    position: relative;
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+  }
+
+  /* Close button for each image */
+  .close-image-btn {
+    position: absolute;
+    top: 5px;
+    left: 125px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    /* Transparent background */
+    cursor: pointer;
+    border-radius: 0 4px 0 4px;
+    padding: 1;
+  }
+
+  /* Close button image in the close button */
+  .close-image-btn img {
+    display: block;
+    /* Removes any extra space around the image */
+    width: 16px;
+    height: 16px;
+  }

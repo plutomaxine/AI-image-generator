@@ -1,0 +1,23 @@
+.textarea{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items:flex-end;
+}
+
+
+.send_btn {
+    margin-left:auto;
+    margin-bottom:5px;
+    color: #53da3b;
+  }
+
+.btn_icon{
+    color: #53da3b;
+    transition: color 0.1s ease;
+}
+
+.btn_icon:hover{
+    color: #50A740;
+}
+

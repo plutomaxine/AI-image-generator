@@ -1,0 +1,116 @@
+.tool-selector {
+    display: flex;
+    /* Flex layout to keep elements horizontally aligned */
+    align-items: center;
+    /* Vertically center elements */
+    justify-content: space-between;
+    /* Start aligning elements from the left side */
+    flex-wrap: nowrap;
+    /* Do not allow elements to wrap */
+    gap: 10px;
+    /* Adjust the gap between elements to 5px */
+    background-color: #4f4f4f;
+    /* Background color */
+    padding: 8px;
+    /* Padding */
+    color: white;
+    width: 100%;
+    /* margin-top: 10px; */
+    border-radius: 10px 10px 0 0;
+}
+
+/* Color picker styles */
+input[type="color"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Cursor as pointer */
+}
+
+/* Slider container, including the adjust button and the slider itself */
+.slider-container {
+    position: relative;
+    /* Set to relative positioning to properly position the popup */
+}
+
+/* Slider popup styles */
+.slider-popup {
+    position: absolute;
+    /* Absolute positioning, based on its nearest positioned ancestor */
+    top: 100%;
+    /* Positioned directly below the adjust button */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 100;
+    /* Ensure it is above other elements */
+}
+
+/* Slider styles */
+.range-slider {
+    width: 200px;
+    /* Slider width */
+}
+
+/* Canvas styles */
+.canvas-sketch{
+    height: 100%;
+    /* Fixed height for the canvas */
+    width: 100%;
+    /* Fixed width for the canvas */
+    /* margin-top: 5px; */
+    /* Gap between the toolbar and the canvas */
+
+}
+
+.sketch-container{
+    width:100%;
+    height:100%;
+}
+
+.undo-btn, .pen-btn, .brush-btn, .eraser-btn, .clear-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.undo-btn:hover, .pen-btn:hover, .brush-btn:hover, .eraser-btn:hover, .clear-btn:hover, .exit-btn:hover{
+    background-color:  #53Da3b;
+    color:#ffffff;
+}
+
+.pen-btn.active, .brush-btn.active, .eraser-btn.active {
+    background-color:  #53Da3b;
+    color:#ffffff;
+}
+
+.proceed-btn button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #4caf50; /* Default enabled state */
+}
+
+.proceed-btn button:disabled {
+    background-color: #7b7e7b; /* Disabled state */
+}
+
+.cancel-btn {
+    width: 80px;
+  }
+
+.sketch-btn{
+    color: #c4c7c4;
+    font-weight:500;
+    margin-left:10px
+}
+.icon-text{
+    margin-left:5px;
+}
+

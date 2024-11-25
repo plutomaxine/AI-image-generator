@@ -1,0 +1,41 @@
+/* Cancel and confirm buttons */
+.proceed-btn, .cancel-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  /* Positon for cancel and proceed buttons */
+  .buttons-container {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  /* Proceed button specifc styles */
+  .proceed-btn {
+    background-color: #7b7e7b;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Active proceed button */
+  .proceed-btn.active {
+    background-color: #4caf50;
+  }
+  
+  /* Disabled proceed button */
+  .proceed-btn:disabled {
+    background-color: #7b7e7b;
+  }
+  
+  /* Cancel button specifc styles */
+  .cancel-btn {
+    background-color: #7b7e7b;
+    color: white;
+    font-size: 14px;
+  }
+ 

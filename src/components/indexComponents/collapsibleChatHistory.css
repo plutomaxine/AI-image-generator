@@ -1,0 +1,92 @@
+.chat_history_wrapper {
+  display: flex;
+  height: 100vh; 
+}
+
+.chat_history {
+  width: 300px;
+  height: 100%;
+  background-color: #282828;
+  padding: 20px;
+  text-align: left;
+  transition: width 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_history.collapsed {
+  width: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.history_head {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.head_text {
+  color: white;
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: auto;
+}
+
+.head_icon {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.history_content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+
+.history_content::-webkit-scrollbar {
+  width: 8px; 
+}
+
+
+.history_content::-webkit-scrollbar-thumb {
+  background-color: #282828; 
+  border-radius: 10px; 
+}
+.history_content:hover::-webkit-scrollbar-thumb {
+  background-color: #242424; 
+}
+
+
+.history_content::-webkit-scrollbar-track {
+  background-color: #282828; 
+}
+
+.history_entry {
+  padding: 5px;
+  color: white;
+}
+
+.control_bar {
+  width: 17px;
+  height: 100%;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control_bar_icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}

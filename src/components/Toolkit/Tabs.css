@@ -1,0 +1,59 @@
+.tabs {
+  list-style-type: none; /* Removes the default bullet points since this is a list*/
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes the tabs display horizontally */
+  justify-content: space-around; /* Evenly spaces the tabs */
+}
+
+/* For each tab */
+.tabs li {
+  padding: 10px 20px;
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the tabs */
+  color: #C4C7C4;
+  font-size:20px;
+}
+
+
+.tab-icon{
+  margin-right:5px;
+}
+
+/* Active tab */
+.tabs li.active {
+  border-bottom: 2px solid #53DA3B; /* Adds a green border to the bottom of the active tab */
+  color:#53DA3B;
+  padding-bottom:20px;
+}
+
+/* Tab content*/
+.upload-tab-image, .album-tab-image {
+  width: 77px;
+  height: 25px; 
+  vertical-align: middle;
+}
+
+/* Tab content*/
+.tab-content {
+  height:100%;
+  background-color:#2a2a2a;
+  border-top:1.5px solid #212121;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:80px;
+
+}
+.sketch-tab-image {
+  width: 80px;
+  height: 19px; 
+  vertical-align: middle;
+}
+
+/* Tab content*/
+.select-tab-image {
+  width: 80px;
+  height: 24px; 
+  vertical-align: middle;
+}
